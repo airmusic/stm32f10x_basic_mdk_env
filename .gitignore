@@ -31,3 +31,11 @@
 # Debug files
 *.dSYM/
 *.su
+
+# mdk
+projects/mdk/Listings/*
+projects/mdk/Objects/*
+projects/mdk/JLinkLog.txt
+
+# ignore files in folder, but keep folder
+!.keep
