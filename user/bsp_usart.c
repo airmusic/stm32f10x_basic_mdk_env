@@ -1,9 +1,9 @@
 /*************************************************
-* @File 			  bsp_usart.c
-* @Brief  			USART
-* @Author  			Timon
-* @TimeCreate  	20150626
-* @Update 			20150626: Create
+* @file 			bsp_usart.c
+* @brief  			USART
+* @author 			Timon
+* @date         	20150626
+     			    20150626: Create
 *************************************************/
 
 #include "bsp_usart.h"
@@ -13,7 +13,7 @@
 
 
 /****************************************************
-* @Brief: USART1 init, PA9, PA10
+* @brief: USART1 init, PA9, PA10
 *****************************************************/
 void usart1_configuration()
 {
@@ -54,7 +54,7 @@ void usart1_configuration()
 }
 
 /****************************************************
-* @Brief  config USART1 interrupt
+* @brief  config USART1 interrupt
 *****************************************************/
 static void usart1_nvic_configuration(void)
 {
@@ -70,7 +70,7 @@ static void usart1_nvic_configuration(void)
 }
 
 /****************************************************
-* @Brief  fputc, redirect printf to USART1
+* @brief  fputc, redirect printf to USART1
 *****************************************************/
 int fputc(int ch, FILE *f)
 {
@@ -81,7 +81,7 @@ int fputc(int ch, FILE *f)
 }
 
 /****************************************************
-* @Brief  fgetc, redirect scanf to USART1
+* @brief  fgetc, redirect scanf to USART1
 *****************************************************/
 int fgetc(FILE *f)
 {
@@ -90,7 +90,7 @@ int fgetc(FILE *f)
 }
 
 /****************************************************
-* @Brief: USART3 init, PB10, PB11
+* @brief: USART3 init, PB10, PB11
 *****************************************************/
 void usart3_configuration(void)
 {
@@ -132,7 +132,7 @@ void usart3_configuration(void)
 }
 
 /****************************************************
-* @Brief  USART3 interrupt conf
+* @brief  USART3 interrupt conf
 *****************************************************/
 static void usart3_nvic_configuration(void)
 {
@@ -148,7 +148,7 @@ static void usart3_nvic_configuration(void)
 }
 
 /****************************************************
-* @Brief: format print, like printf, optional to choose USART no
+* @brief: format print, like printf, optional to choose USART no
 * @param: usartx: usart no, *data, ...
 *****************************************************/
 void usartx_printf(USART_TypeDef* usartx, uint8_t *data, ...)
@@ -217,7 +217,7 @@ void usartx_printf(USART_TypeDef* usartx, uint8_t *data, ...)
 }
 
 /****************************************************
-* @Brief: USART init
+* @brief: USART init
 *****************************************************/
 void usart_custinit()
 {

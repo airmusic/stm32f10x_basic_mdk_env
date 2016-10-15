@@ -1,10 +1,9 @@
 /*************************************************
-* @File 		    bsp_systick.c
-* @Brief 			  system dida, timer
-* @Author 			Timon
-* @Date 			  20150627
-* @Histories 	
-* 					    20150627: Create
+* @file 		    bsp_systick.c
+* @brief 			system dida, timer
+* @author			Timon
+* @date 			20150627 	
+* 					20150627: Create
 *************************************************/
 
 #include "bsp_systick.h"
@@ -12,7 +11,7 @@
 static __IO uint32_t delay_timing;
 
 /*************************************************
-* @Brief  start sys dida timer
+* @brief  start sys dida timer
 ***************************************************/
 void systick_custinit()
 {
@@ -33,7 +32,7 @@ void systick_custinit()
 }
 
 /*************************************************
-* @Brief  us delay
+* @brief  us delay
 **************************************************/
 void delay_10us(__IO uint32_t n_us)
 {
@@ -45,7 +44,7 @@ void delay_10us(__IO uint32_t n_us)
 }
 
 /**************************************************
-* @Brief  get timing, called at SysTick_Handler()
+* @brief  get timing, called at SysTick_Handler()
 **************************************************/
 void delay_timing_decrement(void)
 {
