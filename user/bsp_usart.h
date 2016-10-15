@@ -7,7 +7,7 @@
 
 void usart1_configuration(void);
 static void usart1_nvic_configuration(void);
-void usart3_Configuration(void);
+void usart3_configuration(void);
 static void usart3_nvic_configuration(void);
 int fputc(int ch, FILE *f);
 int fgetc(FILE *f);
