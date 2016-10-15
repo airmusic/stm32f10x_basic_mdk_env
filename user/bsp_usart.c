@@ -9,6 +9,8 @@
 #include "bsp_usart.h"
 #include <stdarg.h>
 #include <stdio.h>
+#include "ssp_debug.h"
+
 
 /****************************************************
 * @Brief: USART1 init, PA9, PA10
@@ -220,5 +222,8 @@ void usartx_printf(USART_TypeDef* usartx, uint8_t *data, ...)
 void usart_custinit()
 {
 	usart1_configuration();
+	DEBUG_PRINTF("USART1 initil success\r\n");
+	
+//	DEBUG_PRINTF("usart3 configuration...\r\n");
 //	usart3_configuration();
 }
