@@ -3,7 +3,6 @@
 * @brief  			USART
 * @author 			Timon
 * @date         	20150626
-     			    20150626: Create
 *************************************************/
 
 #include "bsp_usart.h"
@@ -13,7 +12,7 @@
 
 
 /****************************************************
-* @brief: USART1 init, PA9, PA10
+* @brief  USART1 init, PA9, PA10
 *****************************************************/
 void usart1_configuration()
 {
@@ -90,7 +89,7 @@ int fgetc(FILE *f)
 }
 
 /****************************************************
-* @brief: USART3 init, PB10, PB11
+* @brief  USART3 init, PB10, PB11
 *****************************************************/
 void usart3_configuration(void)
 {
@@ -148,8 +147,8 @@ static void usart3_nvic_configuration(void)
 }
 
 /****************************************************
-* @brief: format print, like printf, optional to choose USART no
-* @param: usartx: usart no, *data, ...
+* @brief   format print, like printf, optional to choose USART no
+* @param   usartx: usart no, *data, ...
 *****************************************************/
 void usartx_printf(USART_TypeDef* usartx, uint8_t *data, ...)
 {
@@ -217,7 +216,7 @@ void usartx_printf(USART_TypeDef* usartx, uint8_t *data, ...)
 }
 
 /****************************************************
-* @brief: USART init
+* @brief   USART init
 *****************************************************/
 void usart_custinit()
 {
